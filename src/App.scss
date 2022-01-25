@@ -1,0 +1,50 @@
+.chat {
+  height: 80vh;
+  border: 1px solid grey;
+  overflow: hidden;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      height: 60px;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      background-color: aliceblue;
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+  .chatbox {
+    width: 100%;
+    height: 70vh;
+    border: 1px solid maroon;
+    padding: 20px;
+    overflow-y: auto;
+    .left {
+      padding: 20px;
+      border-radius: 12px 12px 12px 0;
+      border: 1px solid grey;
+      width: fit-content;
+    }
+    .right {
+      width: fit-content;
+      // float: right;
+      padding: 20px;
+      border-radius: 12px 12px 0 12px;
+      border: 1px solid grey;
+    }
+  }
+  form {
+    width: 100%;
+    .wrapinp {
+      display: flex;
+      justify-content: space-between;
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
